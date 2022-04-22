@@ -1,0 +1,25 @@
+.nav{
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0 , 0, 0.6);
+    display: flex;
+    z-index: 10;
+}
+
+.nav__item{
+    font-size: 1.75rem;
+}
+
+.nav__item.active a{
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.nav__item ~ .nav__item{
+    margin-left: 20px;
+}
